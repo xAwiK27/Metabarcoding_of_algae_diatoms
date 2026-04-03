@@ -1,0 +1,9 @@
+Notes:
+
+data/fastqs/* = makes the directory.
+
+To make a hidden file, put a decimal in the front of the file name, to make it invisible.
+
+.gitignore file
+
+refdb/* (reference databases) = Is a directory
