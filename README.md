@@ -1,2 +1,10 @@
-# Metabarcoding_of_algae_diatoms
-gen711-811 final project
+# Metabarcoding Analysis of Algae Diatoms
+
+## Authors
+Luke Insana & Ari Kamvar
+
+## Background
+
+## Methods
+
+## Findings 
