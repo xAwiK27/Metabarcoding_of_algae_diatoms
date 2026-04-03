@@ -27,3 +27,4 @@ fastp
 -poly_g_min_len-g -0
 
 echo $f
+folder update
