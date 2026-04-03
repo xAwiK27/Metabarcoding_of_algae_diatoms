@@ -7,3 +7,8 @@ To make a hidden file, put a decimal in the front of the file name, to make it i
 .gitignore file
 
 refdb/* (reference databases) = Is a directory
+
+mkdir code/
+mkdir plots/
+mkdir results/
+
