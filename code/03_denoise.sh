@@ -1,6 +1,6 @@
 #!/bin/bash
 
-primer="16s_V4-V5"
+primer="18s"
 projname="YOURPROJ_${primer}"
 ## Number of bp overlapping between forward and reverse reads required for merging in DADA2. Default is 12, but I have found that this can be relaxed to 10 for 16s V4-V5 amplicons without a significant loss of quality. This allows more reads to be retained after denoising. See
 overlap=10
