@@ -1,6 +1,6 @@
 #!/bin/bash
 
-primer="16s_V4-V5"
+primer="18s"
 projname="YOURPROJ_${primer}"
 
 ## Classifiy
