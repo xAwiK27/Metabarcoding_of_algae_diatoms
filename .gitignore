@@ -1,2 +1,3 @@
 data/fastqs/*
+!data/fastqs/placeholder1.txt
 refdb/*
