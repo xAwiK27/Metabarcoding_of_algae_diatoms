@@ -1,7 +1,7 @@
 #!/bin/bash
 
 primer="18s"
-projname="YOURPROJ_${primer}"
+projname="DIATOMS_${primer}"
 
 ## Classifiy
 refreads=${refdbs/16s/ref_seqs_16S_V4-V5.qza}
@@ -15,7 +15,7 @@ perc_identity=0.75
 weak_id=0.65
 
 qiime feature-classifier classify-hybrid-vsearch-sklearn \
-  --i-query results/${projname}_rep-seqs.qza \
+  --i-query data/results/${projname}_rep-seqs.qza \
   --i-classifier ${sklearn} \
   --i-reference-reads ${refreads} \
   --i-reference-taxonomy  ${reftax} \
@@ -27,4 +27,4 @@ qiime feature-classifier classify-hybrid-vsearch-sklearn \
   --p-maxhits all \
   --p-min-consensus 0.51 \
   --p-confidence 0.7 \
-  --o-classification results/${projname}_hybrid_taxonomy
+  --o-classification data/results/${projname}_hybrid_taxonomy
