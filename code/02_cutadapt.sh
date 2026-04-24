@@ -34,10 +34,11 @@ qiime cutadapt trim-paired \
     --p-error-rate 0.12 \
     --o-trimmed-sequences data/results/${projname}_demux_cutadapt_t.qza \
     --p-cores 4 \
+    --p-discard-untrimmed \ 
     $cutadapt_config \
     --p-match-adapter-wildcards \
     --verbose 
-    ##--p-discard-untrimmed \ --> This is the removed line, it had to be placed here so the script would work with the formatting/syntax
+    
 
 qiime demux summarize \
     --i-data data/results/${projname}_demux_cutadapt_t.qza \
