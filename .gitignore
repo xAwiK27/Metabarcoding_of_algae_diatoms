@@ -2,4 +2,4 @@ data/fastqs/*
 !data/fastqs/placeholder1.txt
 data/results/*
 data/poly-G-trimmed/*
-refdb/*
+data/refdb/*

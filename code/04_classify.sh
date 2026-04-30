@@ -1,23 +1,32 @@
 #!/bin/bash
 
+# Establishing project variables
 primer="RBCL"
 projname="DIATOMS_${primer}"
-## 5 threads are used here because upon initial running with 16 threads outside of class, the reftax, refreads, and sklearn variable file locations are unreadable (lack of permission)
 
-threads=5
-## Classifiy, copied from qiime2_parameters.sh
-reftax=${reftax:-/home/users/jtm1171/refdbs/18s/SILVA/silva-138-99-tax.qza}
-refreads=${refreads:-/home/users/jtm1171/refdbs/18s/SILVA/silva-138-99-seqs-pid_0.65-extracted.qza}
-sklearn=${sklearn:-/home/users/jtm1171/refdbs/18s/SILVA/silva-138-99-seqs-pid_0.65-classifier.qza}
+# Entering QIIME conda environment
+conda activate qiime2-amplicon-2026.1  
 
-## copied from qiime2_parameters.sh
- maxaccepts=10
- query_cov=0.8 
- perc_identity=0.90 
- weak_id=0.80
+# Setting computing power variable; 15 threads was used because this script was run outside of class time, so more computing power could be used
+threads=15
 
+## Classifiy variables, copied from qiime2_parameters.sh > these are the inputs so the classifier can see how the taxa and reads need to be classified
+    refreads="data/refdb/diat_barcode_v10_263bp-seqs.qza"
+    reftax="data/refdb/diat_barcode_v10_263bp-tax.qza"
+    
+## Using given classifier
+    sklearn="data/refdb/diat_barcode_v10_263bp-sklearn-classifier_1.4.2.qza"
+
+## Parameters copied from qiime2_parameters.sh to run the qiime classifier
+    ## taxonomy
+    maxaccepts=all
+    query_cov=0.80 
+    perc_identity=0.80
+    weak_id=0.50 
+
+#Running the qiime classifier based on parameters to organize data in a specific manner to aid in taxa bar plot creation
 qiime feature-classifier classify-hybrid-vsearch-sklearn \
-  --i-query data/results/${projname}_rep-seqs_t.qza \
+  --i-query data/results/${projname}_rep-seqs.qza \
   --i-classifier ${sklearn} \
   --i-reference-reads ${refreads} \
   --i-reference-taxonomy  ${reftax} \

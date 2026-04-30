@@ -14,8 +14,8 @@
 
     cutadapt_config="--p-front-f $fw1 --p-front-f $fw2 --p-front-f $fw3 --p-front-r $rv1 --p-front-r $rv2"
 
-
-    polyg_len=150
+#polyg_len was originally 150, this was set to 200 in class as set by the professor
+    polyg_len=200 
     
     ## denoise
     ## trunc
@@ -34,7 +34,7 @@
     weak_id=0.50 
     #tophit_perc_identity=0.90
 
-    refreads=${refreads:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-seqs.qza}
-    reftax=${reftax:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-tax.qza}
-    blastdb=${blastdb:-/home/unhAW/jtmiller/watts/ref-database/rbcl/blast_diat.barcode}
-    sklearn=${sklearn:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-sklearn-classifier.qza}
+    refreads=${refreads:-/tmp/GEN711-811_data/refdbs/diat_barcode_v10_263bp-seqs.qza}
+    reftax=${reftax:-/tmp/GEN711-811_data/refdbs/diat_barcode_v10_263bp-tax.qza}
+    blastdb=${blastdb:-/tmp/GEN711-811_data/refdbs/blast_diat.barcode}
+    sklearn=${sklearn:-/tmp/GEN711-811_data/refdbs/diat_barcode_v10_263bp-sklearn-classifier.qza}
