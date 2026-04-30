@@ -34,5 +34,6 @@ echo  -e "\npolyG filter complete.\n"
 echo  -e "counting reads before and after polyG filter...\n"
 
 for fq in data/fastqs/*R1_001.fastq.gz ; do 
-    echo  -e  "$(basename $f | sed 's/_L002_R1_001.fastq.gz//' ) $(zcat $f | grep '^@' | wc -l) $(zcat data/poly-G-trimmed/$fq | grep '^@' | wc -l)" 
+   f=$(basename $fq)
+    echo  -e  "$(sed 's/_L002_R1_001.fastq.gz//' ) $(zcat $f | grep '^@' | wc -l) $(zcat data/poly-G-trimmed/$fq | grep '^@' | wc -l)" 
 done | sort -k2 -h | awk -v OFS='\t' '{ print $1,$2,$3 }' > polyG_filter_read_counts.tsv
