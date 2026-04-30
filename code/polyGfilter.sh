@@ -4,6 +4,8 @@ echo -e "begin polyG filter...\n"
 echo  -e "polyG filter length threshold: ${1}\n"
 echo  -e "polyG filter will remove polyG tails and also filter out reads that are too short after trimming.\n"
 
+polyg_len=200
+
  for fq in data/fastqs/*R1_001.fastq.gz ; do 
     f=$(basename $fq)
     r=$(echo $f | sed 's/_R1_/_R2_/g')
@@ -19,7 +21,7 @@ echo  -e "polyG filter will remove polyG tails and also filter out reads that ar
      --cut_tail_mean_quality 25 \
      --cut_tail_window_size 2 \
      --disable_adapter_trimming \
-     -l ${1} \
+     -l ${polyg_len} \
      -g -Q
      
      echo $f
@@ -31,7 +33,6 @@ echo  -e "info in fastp.out\n"
 echo  -e "\npolyG filter complete.\n"
 echo  -e "counting reads before and after polyG filter...\n"
 
- for fq in data/fastqs/*R1_001.fastq.gz ; do
-    f=$(basename $fq)
-    echo  -e  "$(echo $f | sed 's/_L002_R1_001.fastq.gz//' ) $(zcat $fq | grep '^@' | wc -l) $(zcat data/poly-G-trimmed/$f | grep '^@' | wc -l)" 
- done | sort -k2 -h | awk -v OFS='\t' '{ print $1,$2,$3 }' > polyG_filter_read_counts.tsv
+for fq in data/fastqs/*R1_001.fastq.gz ; do 
+    echo  -e  "$(basename $f | sed 's/_L002_R1_001.fastq.gz//' ) $(zcat $f | grep '^@' | wc -l) $(zcat data/poly-G-trimmed/$fq | grep '^@' | wc -l)" 
+done | sort -k2 -h | awk -v OFS='\t' '{ print $1,$2,$3 }' > polyG_filter_read_counts.tsv
