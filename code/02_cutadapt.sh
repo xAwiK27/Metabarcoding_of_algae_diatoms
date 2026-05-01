@@ -26,7 +26,7 @@ conda activate qiime2-amplicon-2026.1
 qiime tools import \
     --type "SampleData[PairedEndSequencesWithQuality]"  \
     --input-format CasavaOneEightSingleLanePerSampleDirFmt \
-    --input-path data/poly-G-trimmed \
+    --input-path data/poly-G-trimmed/ \
     --output-path data/results/${projname}_demux.qza 
 
 # Run actual cutadapt script to trim paired-end reads
