@@ -18,12 +18,12 @@ From the given fastqgz files data below, we were able to run a program that woul
 <img src="plots/unweighted_unifrac_emperor_WaterInputCat_Full.png" width="600">
 Figure 1: PCoA with species legend. The greatest source of variability is Axis 1 (the x-axis). The second greatest source of variability is Axis 2 (the y-axis). The third greatest source of varaibility is Axis 3 (not visible, the z-axis).
 
-
 &nbsp;
-
 
 <img src="plots/unweighted_unifrac_emperor_WaterInputCat.png" width="600">
 Figure 2: PCoA plot without the legend. Same axes as Figure 1.
+
+&nbsp;
 
 The PCoA, or Principal Coordinates Analysis, visualization from the unweighted_unifrac_emperor.qzv plot visually demonstrates several distinct characteristics regarding the microbial community structure of our diatom samples. These distinct characteristics include Significant Phylogenetic Separation (Axis 1), Unique Phylogenetic Signatures, High Intra-Group relatedness as well as Environmental Exclusivity, and these parameters were analyzed specifically using the QIIME 2 View platform online.  Within Figures 1 and 2 above is the unweighted unifrac emperor plot. From this plot, a notable pattern discerned was the distinct cluster of light-tan spheres isolated on the far-right side of Axis 1 (the x-axis). Since Axis 1 captures the most significant variation in the data mostly due to water input categories, this separation suggests that these specific samples possess a unique phylogenetic signature, containing microbial lineages that are largely absent from the rest of the group, but are all more closely related to one another. This qualitative measure of phylogenetic distance, known as Unweighted UniFrac, primarily indicates that these specific water inputs may have created an environment so distinct and unique from the typical, that the core microbiome found in other samples could not survive or thrive in those specific, altered environments (Lozupone & Knight, 2005).
 
@@ -34,12 +34,12 @@ Following this observation, an examination of the WaterInputCat values (Figures 
 <img src="plots/DIATOMS_RBCL_taxa_barplot_Taxonomy_Level_4.png" width="600">
 Figure 3: Taxanomic Bar Plot with legend. The x-axis is the specific sample and the y-axis is the relative frequency (%).
 
-
-...
-
+&nbsp;
 
 <img src="plots/DIATOMS_RBCL_taxa_barplot_Taxonomy_Level_4_Full.png" width="600">
 Figure 4: A zoomed out version of Figure 3. 
+
+&nbsp;
 
 The taxonomic bar plots from the DIATOMS RBCL file, Figures 3 and 4 above, provide a detailed visual overview of the community composition, shifting the focus from a broad perspective of the biodiversity to the more specific identities of the organisms that are actually present in these environments. A more obvious observation in this bar plot is the overwhelming dominance of the order known as Achnanthales across a significant majority of the samples, as seen in Figures 3 and 4. The use of the rbcL gene marker allows researchers to use high-resolution identification for these diatom lineages (Kermarrec et al., 2013). These samples are sorted by the relative frequency of the dominant taxon, revealing a clear transition: while certain samples are composed of 80–90% Achnanthales, others exhibit a more even distribution of diverse orders, such as Naviculales and Bacillariales. This diatom gradient basically suggests that although the Achnanthales taxon is a highly successful member of this ecosystem, specific environmental conditions outside of just what was provded in both sets of figures facilitate the development of a more complex and balanced microbial community. (Vasselon et al., 2017). 
 
