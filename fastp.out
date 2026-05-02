@@ -1,4 +1,4 @@
-Read1 before filtering:
+]633;E;for fq in data/fastqs/*R1_001.fastq.gz;362dfa13-909b-4cbd-9a81-68cb9187c56f]633;CRead1 before filtering:
 total reads: 388357
 total bases: 97477607
 Q20 bases: 93322068(95.7369%)
@@ -116,7 +116,7 @@ JSON report: fastp.json
 HTML report: data/html/OverRef-3809_S1334.html
 
 fastp --in1 data/fastqs/OverRef-3809_S1334_L002_R1_001.fastq.gz --in2 data/fastqs/OverRef-3809_S1334_L002_R2_001.fastq.gz --html data/html/OverRef-3809_S1334.html --out1 data/poly-G-trimmed/OverRef-3809_S1334_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/OverRef-3809_S1334_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 OverRef-3809_S1334_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 264040
@@ -156,7 +156,7 @@ JSON report: fastp.json
 HTML report: data/html/OverRef-7631_S1328.html
 
 fastp --in1 data/fastqs/OverRef-7631_S1328_L002_R1_001.fastq.gz --in2 data/fastqs/OverRef-7631_S1328_L002_R2_001.fastq.gz --html data/html/OverRef-7631_S1328.html --out1 data/poly-G-trimmed/OverRef-7631_S1328_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/OverRef-7631_S1328_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 1 seconds
+fastp v0.23.4, time used: 2 seconds
 OverRef-7631_S1328_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 337831
@@ -316,7 +316,7 @@ JSON report: fastp.json
 HTML report: data/html/OverStrs-8635_S1305.html
 
 fastp --in1 data/fastqs/OverStrs-8635_S1305_L002_R1_001.fastq.gz --in2 data/fastqs/OverStrs-8635_S1305_L002_R2_001.fastq.gz --html data/html/OverStrs-8635_S1305.html --out1 data/poly-G-trimmed/OverStrs-8635_S1305_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/OverStrs-8635_S1305_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 1 seconds
+fastp v0.23.4, time used: 2 seconds
 OverStrs-8635_S1305_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 490469
@@ -356,7 +356,7 @@ JSON report: fastp.json
 HTML report: data/html/OverStrs-9519_S1306.html
 
 fastp --in1 data/fastqs/OverStrs-9519_S1306_L002_R1_001.fastq.gz --in2 data/fastqs/OverStrs-9519_S1306_L002_R2_001.fastq.gz --html data/html/OverStrs-9519_S1306.html --out1 data/poly-G-trimmed/OverStrs-9519_S1306_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/OverStrs-9519_S1306_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 3 seconds
+fastp v0.23.4, time used: 2 seconds
 OverStrs-9519_S1306_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 409475
@@ -436,7 +436,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-0363-QC_S1299.html
 
 fastp --in1 data/fastqs/PrimeRef-0363-QC_S1299_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-0363-QC_S1299_L002_R2_001.fastq.gz --html data/html/PrimeRef-0363-QC_S1299.html --out1 data/poly-G-trimmed/PrimeRef-0363-QC_S1299_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-0363-QC_S1299_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 3 seconds
 PrimeRef-0363-QC_S1299_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 348066
@@ -476,7 +476,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-0363_S1298.html
 
 fastp --in1 data/fastqs/PrimeRef-0363_S1298_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-0363_S1298_L002_R2_001.fastq.gz --html data/html/PrimeRef-0363_S1298.html --out1 data/poly-G-trimmed/PrimeRef-0363_S1298_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-0363_S1298_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeRef-0363_S1298_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 381455
@@ -556,7 +556,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-0783_S1337.html
 
 fastp --in1 data/fastqs/PrimeRef-0783_S1337_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-0783_S1337_L002_R2_001.fastq.gz --html data/html/PrimeRef-0783_S1337.html --out1 data/poly-G-trimmed/PrimeRef-0783_S1337_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-0783_S1337_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 1 seconds
+fastp v0.23.4, time used: 2 seconds
 PrimeRef-0783_S1337_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 384932
@@ -636,7 +636,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-2325_S1314.html
 
 fastp --in1 data/fastqs/PrimeRef-2325_S1314_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-2325_S1314_L002_R2_001.fastq.gz --html data/html/PrimeRef-2325_S1314.html --out1 data/poly-G-trimmed/PrimeRef-2325_S1314_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-2325_S1314_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeRef-2325_S1314_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 510622
@@ -716,7 +716,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-5379_S1322.html
 
 fastp --in1 data/fastqs/PrimeRef-5379_S1322_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-5379_S1322_L002_R2_001.fastq.gz --html data/html/PrimeRef-5379_S1322.html --out1 data/poly-G-trimmed/PrimeRef-5379_S1322_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-5379_S1322_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 0 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeRef-5379_S1322_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 324316
@@ -756,7 +756,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-6366_S1317.html
 
 fastp --in1 data/fastqs/PrimeRef-6366_S1317_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-6366_S1317_L002_R2_001.fastq.gz --html data/html/PrimeRef-6366_S1317.html --out1 data/poly-G-trimmed/PrimeRef-6366_S1317_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-6366_S1317_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeRef-6366_S1317_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 405895
@@ -796,7 +796,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-6395_S1323.html
 
 fastp --in1 data/fastqs/PrimeRef-6395_S1323_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-6395_S1323_L002_R2_001.fastq.gz --html data/html/PrimeRef-6395_S1323.html --out1 data/poly-G-trimmed/PrimeRef-6395_S1323_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-6395_S1323_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeRef-6395_S1323_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 357979
@@ -876,7 +876,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-8122_S1336.html
 
 fastp --in1 data/fastqs/PrimeRef-8122_S1336_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-8122_S1336_L002_R2_001.fastq.gz --html data/html/PrimeRef-8122_S1336.html --out1 data/poly-G-trimmed/PrimeRef-8122_S1336_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-8122_S1336_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 1 seconds
+fastp v0.23.4, time used: 2 seconds
 PrimeRef-8122_S1336_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 537741
@@ -916,7 +916,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-8541_S1331.html
 
 fastp --in1 data/fastqs/PrimeRef-8541_S1331_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-8541_S1331_L002_R2_001.fastq.gz --html data/html/PrimeRef-8541_S1331.html --out1 data/poly-G-trimmed/PrimeRef-8541_S1331_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-8541_S1331_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 3 seconds
+fastp v0.23.4, time used: 2 seconds
 PrimeRef-8541_S1331_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 436680
@@ -956,7 +956,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeRef-9677-QC_S1304.html
 
 fastp --in1 data/fastqs/PrimeRef-9677-QC_S1304_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeRef-9677-QC_S1304_L002_R2_001.fastq.gz --html data/html/PrimeRef-9677-QC_S1304.html --out1 data/poly-G-trimmed/PrimeRef-9677-QC_S1304_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeRef-9677-QC_S1304_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 3 seconds
 PrimeRef-9677-QC_S1304_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 347823
@@ -1036,7 +1036,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-0917_S1341.html
 
 fastp --in1 data/fastqs/PrimeStrs-0917_S1341_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-0917_S1341_L002_R2_001.fastq.gz --html data/html/PrimeStrs-0917_S1341.html --out1 data/poly-G-trimmed/PrimeStrs-0917_S1341_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-0917_S1341_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeStrs-0917_S1341_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 370088
@@ -1076,7 +1076,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-1863_S1312.html
 
 fastp --in1 data/fastqs/PrimeStrs-1863_S1312_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-1863_S1312_L002_R2_001.fastq.gz --html data/html/PrimeStrs-1863_S1312.html --out1 data/poly-G-trimmed/PrimeStrs-1863_S1312_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-1863_S1312_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 1 seconds
+fastp v0.23.4, time used: 2 seconds
 PrimeStrs-1863_S1312_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 12451
@@ -1236,7 +1236,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-4829_S1318.html
 
 fastp --in1 data/fastqs/PrimeStrs-4829_S1318_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-4829_S1318_L002_R2_001.fastq.gz --html data/html/PrimeStrs-4829_S1318.html --out1 data/poly-G-trimmed/PrimeStrs-4829_S1318_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-4829_S1318_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 1 seconds
+fastp v0.23.4, time used: 2 seconds
 PrimeStrs-4829_S1318_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 455706
@@ -1316,7 +1316,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-6327_S1320.html
 
 fastp --in1 data/fastqs/PrimeStrs-6327_S1320_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-6327_S1320_L002_R2_001.fastq.gz --html data/html/PrimeStrs-6327_S1320.html --out1 data/poly-G-trimmed/PrimeStrs-6327_S1320_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-6327_S1320_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 3 seconds
+fastp v0.23.4, time used: 2 seconds
 PrimeStrs-6327_S1320_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 502712
@@ -1356,7 +1356,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-6989_S1307.html
 
 fastp --in1 data/fastqs/PrimeStrs-6989_S1307_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-6989_S1307_L002_R2_001.fastq.gz --html data/html/PrimeStrs-6989_S1307.html --out1 data/poly-G-trimmed/PrimeStrs-6989_S1307_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-6989_S1307_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 3 seconds
 PrimeStrs-6989_S1307_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 383215
@@ -1436,7 +1436,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-7435_S1316.html
 
 fastp --in1 data/fastqs/PrimeStrs-7435_S1316_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-7435_S1316_L002_R2_001.fastq.gz --html data/html/PrimeStrs-7435_S1316.html --out1 data/poly-G-trimmed/PrimeStrs-7435_S1316_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-7435_S1316_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeStrs-7435_S1316_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 589334
@@ -1596,7 +1596,7 @@ JSON report: fastp.json
 HTML report: data/html/PrimeStrs-8773_S1332.html
 
 fastp --in1 data/fastqs/PrimeStrs-8773_S1332_L002_R1_001.fastq.gz --in2 data/fastqs/PrimeStrs-8773_S1332_L002_R2_001.fastq.gz --html data/html/PrimeStrs-8773_S1332.html --out1 data/poly-G-trimmed/PrimeStrs-8773_S1332_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/PrimeStrs-8773_S1332_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 0 seconds
+fastp v0.23.4, time used: 1 seconds
 PrimeStrs-8773_S1332_L002_R1_001.fastq.gz
 Read1 before filtering:
 total reads: 308072
@@ -1756,5 +1756,5 @@ JSON report: fastp.json
 HTML report: data/html/W1057_S1340.html
 
 fastp --in1 data/fastqs/W1057_S1340_L002_R1_001.fastq.gz --in2 data/fastqs/W1057_S1340_L002_R2_001.fastq.gz --html data/html/W1057_S1340.html --out1 data/poly-G-trimmed/W1057_S1340_L002_R1_001.fastq.gz --out2 data/poly-G-trimmed/W1057_S1340_L002_R2_001.fastq.gz --cut_tail --poly_g_min_len 4 --cut_tail_mean_quality 25 --cut_tail_window_size 2 --disable_adapter_trimming -l 200 -g -Q 
-fastp v0.23.4, time used: 2 seconds
+fastp v0.23.4, time used: 1 seconds
 W1057_S1340_L002_R1_001.fastq.gz
