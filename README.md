@@ -11,7 +11,7 @@ From the given fastqgz files data below, we were able to run a program that woul
 
 ## Findings 
 
-<img src="Metabarcoding_of_algae_diatoms/plots/unweighted_unifrac_emperor_WaterInputCat_Full.png" width="600">
+<img src="plots/unweighted_unifrac_emperor_WaterInputCat_Full.png" width="600">
 
 <img src="plots/unweighted_unifrac_emperor_WaterInputCat.png" width="600">
 
