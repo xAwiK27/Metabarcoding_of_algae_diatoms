@@ -19,6 +19,7 @@ From the given fastqgz files data below, we were able to run a program that woul
 Figure 1: PCoA with species legend. The greatest source of variability is Axis 1 (the x-axis). The second greatest source of variability is Axis 2 (the y-axis). The third greatest source of varaibility is Axis 3 (not visible, the z-axis).
 
 
+&nbsp;
 
 
 <img src="plots/unweighted_unifrac_emperor_WaterInputCat.png" width="600">
@@ -34,6 +35,7 @@ Following this observation, an examination of the WaterInputCat values (Figures 
 Figure 3: Taxanomic Bar Plot with legend. The x-axis is the specific sample and the y-axis is the relative frequency (%).
 
 
+...
 
 
 <img src="plots/DIATOMS_RBCL_taxa_barplot_Taxonomy_Level_4_Full.png" width="600">
