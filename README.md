@@ -13,7 +13,7 @@ From the given fastqgz files data below, we were able to run a program that woul
 
 ## Findings
 
-### Data Analysis: Unweighted UniFrac PCoA
+### Data Analysis: Unweighted UniFrac PCoA (WaterInputCat)
 
 <img src="plots/unweighted_unifrac_emperor_WaterInputCat_Full.png" width="600">
 Figure 1: PCoA with species legend. The greatest source of variability is Axis 1 (the x-axis). The second greatest source of variability is Axis 2 (the y-axis). The third greatest source of varaibility is Axis 3 (not visible, the z-axis).
@@ -25,34 +25,52 @@ Figure 2: PCoA plot without the legend. Same axes as Figure 1.
 
 &nbsp;
 
+<img src="plots/unweighted_unifrac_emperor_DIST-CAT_Yellow-Green-Blue.png" width="600">
+Figure 3: PCoA plot demonstrating the DIST-CAT variable. Same axes as Figure 1.
+
+&nbsp;
+
 The PCoA, or Principal Coordinates Analysis, visualization from the unweighted_unifrac_emperor.qzv plot visually demonstrates several distinct characteristics regarding the microbial community structure of our diatom samples. These distinct characteristics include Significant Phylogenetic Separation (Axis 1), Unique Phylogenetic Signatures, High Intra-Group relatedness as well as Environmental Exclusivity, and these parameters were analyzed specifically using the QIIME 2 View platform online.  Within Figures 1 and 2 above is the unweighted unifrac emperor plot. From this plot, a notable pattern discerned was the distinct cluster of light-tan spheres isolated on the far-right side of Axis 1 (the x-axis). Since Axis 1 captures the most significant variation in the data mostly due to water input categories, this separation suggests that these specific samples possess a unique phylogenetic signature, containing microbial lineages that are largely absent from the rest of the group, but are all more closely related to one another. This qualitative measure of phylogenetic distance, known as Unweighted UniFrac, primarily indicates that these specific water inputs may have created an environment so distinct and unique from the typical, that the core microbiome found in other samples could not survive or thrive in those specific, altered environments (Lozupone & Knight, 2005).
 
 Following this observation, an examination of the WaterInputCat values (Figures 1) in the Unweighted Unifrac Emperor plot that was visualized with the help of the EMPeror tool, a 3D visualization tool designed to help researchers explore and interpret PCoA plots for microbial communities. This WaterInputCat examination more specifically demonstrates the absence of a clear environmental gradient between the diatom variants (Vázquez-Baeza et al., 2013). While numeric inputs often result in a smooth transition of colors across a plot, the data in this plot displays what is known as significant "color bleeding," where low values and mid-range values overlap within the same spatial coordinates across all three axis dimensions. This implies that the presence or absence of microbial species is not strictly dictated by the volume of water input but rather suggests that other variables such as the water source or localized environmental factors, may be the dominant drivers of this community composition. Another observation worth mentioning here as well is that the broad spread of samples across all three axes highlights high phylogenetic diversity. This ultimately suggests that these environments harbor fundamentally different kinds of bacteria rather than just varying abundances of the same taxa (Lozupone et al., 2011).
 
+&nbsp;
+
+
+### Data Analysis: Unweighted UniFrac PCoA (DIST-Cat)
+
+&nbsp;
+
+Looking at the DIST-Cat variable (Figure 3) (which categorizes streams by distance), examining the PCoA plot shows some significance in the data. However, due to the spread of said data along the axes, it is difficult to determine the validity of said significance. Along Axis 2, the reference data is closer to the zero point while the stream data is closer to the top of Axis 2. This means that there is an underlying second degree of variation between the two sets of data. While not the most variation, this is still significant as it categorizes the data into those that are some distance from the references and the references themselves. This aligns well with previous research done into diatom variation in rivers as shown by Kulas A., et al and Borrego-Ramos, M.; they show that there is genetic variation amongst diatoms in different climates and geographical zones (2025; 2025). But, when looking along Axis 1 (still with the DIST-Cat variable), the majority of the data is closer towards the zero point of the axis (across both data sets). This shows that there is no major significance in the highest degree of variation between the reference data and the collected data. However, the reference data (in white) is too spread out along this axis to truly make a definite conclusion.  More data, specifically reference data, would need to be collected to see if the spread is because of each steam's natural characteristics or if there was some error in collection. 
+
 ### Data Analysis: Diatom Taxonomic Bar Plots
 
 <img src="plots/DIATOMS_RBCL_taxa_barplot_Taxonomy_Level_4.png" width="600">
-Figure 3: Taxanomic Bar Plot with legend. The x-axis is the specific sample and the y-axis is the relative frequency (%).
+Figure 4: Taxanomic Bar Plot with legend. The x-axis is the specific sample and the y-axis is the relative frequency (%).
 
 &nbsp;
 
 <img src="plots/DIATOMS_RBCL_taxa_barplot_Taxonomy_Level_4_Full.png" width="600">
-Figure 4: A zoomed out version of Figure 3. 
+Figure 5: A zoomed out version of Figure 4. 
 
 &nbsp;
 
-The taxonomic bar plots from the DIATOMS RBCL file, Figures 3 and 4 above, provide a detailed visual overview of the community composition, shifting the focus from a broad perspective of the biodiversity to the more specific identities of the organisms that are actually present in these environments. A more obvious observation in this bar plot is the overwhelming dominance of the order known as Achnanthales across a significant majority of the samples, as seen in Figures 3 and 4. The use of the rbcL gene marker allows researchers to use high-resolution identification for these diatom lineages (Kermarrec et al., 2013). These samples are sorted by the relative frequency of the dominant taxon, revealing a clear transition: while certain samples are composed of 80–90% Achnanthales, others exhibit a more even distribution of diverse orders, such as Naviculales and Bacillariales. This diatom gradient basically suggests that although the Achnanthales taxon is a highly successful member of this ecosystem, specific environmental conditions outside of just what was provded in both sets of figures facilitate the development of a more complex and balanced microbial community. (Vasselon et al., 2017). 
+The taxonomic bar plots from the DIATOMS RBCL file, Figures 4 and 5 above, provide a detailed visual overview of the community composition, shifting the focus from a broad perspective of the biodiversity to the more specific identities of the organisms that are actually present in these environments. A more obvious observation in this bar plot is the overwhelming dominance of the order known as Achnanthales across a significant majority of the samples, as seen in Figures 4 and 5. The use of the rbcL gene marker allows researchers to use high-resolution identification for these diatom lineages (Kermarrec et al., 2013). These samples are sorted by the relative frequency of the dominant taxon, revealing a clear transition: while certain samples are composed of 80–90% Achnanthales, others exhibit a more even distribution of diverse orders, such as Naviculales and Bacillariales. This diatom gradient basically suggests that although the Achnanthales taxon is a highly successful member of this ecosystem, specific environmental conditions outside of just what was provded in both sets of figures facilitate the development of a more complex and balanced microbial community. (Vasselon et al., 2017). 
 
 The data also reveals an interesting relationship between dominant and rare taxa within these microbial communities, which are identified using comprehensive libraries methods such as Diat.barcode for example (Rimet et al., 2019). In samples where Achnanthales is less dominant, there is a visible "bloom" of various other groups, including Melosirales and Cymbellales, which appear in significant proportions, but only when the primary taxon’s dominance is weakened due to other environmental conditions. This structural shift visually highlights a high level of taxonomic turnover where the community reconfigures its functional players based solely on the environmental shifts that are present (Rimet et al., 2016). The presence of a small "Unassigned" fraction essentially indicates that while the rbcL marker is effective, there remains a portion of the community that represents genetic signatures that are very poorly documented with respect to their known diatom reference genomes. Collectively, these results describe a biological landscape dominated by a few key players that remain capable of supporting immense diversity, but only under the very specific environmental conditions that were present at the time of data collection.
 
 
 # Bibliography
 
+Borrego-Ramos, M., Becares, E., & Blanco, S. (2025). Geographic distance shapes morphological and molecular disparities in a common diatom species as revealed by geometric morphometry and metabarcoding. Hydrobiologia, 852(7), 1959–1971. https://doi.org/10.1007/s10750-024-05790-1
+
 Bolyen, E., Rideout, J. R., Dillon, M. R., Bokulich, N. A., Abnet, C. C., Al-Ghalith, G. A., Alexander, H., Alm, E. J., Arumugam, M., Asnicar, F., Bai, Y., Bisanz, J. E., Bittinger, K., Brejnrod, A., Brislawn, C. J., Brown, C. T., Callahan, B. J., Caraballo-Rodríguez, A. M., Chase, J., ... Caporaso, J. G. (2019). Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nature Biotechnology, 37(8), 852–857. https://doi.org/10.1038/s41587-019-0209-9 Cited by: 17,922  
 
 EMBL-EBI. (n.d.). DNA metabarcoding and its applications | Exploring environmental DNA. Retrieved May 2, 2026, from https://www.ebi.ac.uk/training/online/courses/exploring-environmental-dna/dna-metabarcoding-and-its-applications/ 
 
 Kermarrec, L., Franc, A., Rimet, F., Chaumeil, P., Humbert, J. F., & Bouchez, A. (2013). A next-generation sequencing approach to river biomonitoring using benthic diatoms. Freshwater Science, 32(4), 1356–1363. https://doi.org/10.1899/13-028.1  
+
+Kulaš, A., Lemonnier, C., Alric, B., Kahlert, M., Trobajo, R., Udovič, M. G., & Rimet, F. (2025). Can genetic diversity in microalgae species be explained by climate: an overview of metabarcoding with diatoms. ISME communications, 5(1), ycaf171. https://doi.org/10.1093/ismeco/ycaf171
 
 Lozupone, C., & Knight, R. (2005). UniFrac: A new phylogenetic method for comparing microbial communities. Applied and Environmental Microbiology, 71(12), 8228–8235. https://doi.org/10.1128/AEM.71.12.8228-8235.2005  
 
